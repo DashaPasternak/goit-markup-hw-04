@@ -136,6 +136,7 @@ color: var(--accent-color);
     margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
 
     font-weight: 500;
     font-size: 14px;
@@ -144,20 +145,26 @@ color: var(--accent-color);
     color: var(--contacts-color);
 }
 
-.header-contacts:hover{
+.header-contacts:hover, .header-contacts:focus{
     color: var(--accent-color);
 }
 
-.header-contacts:focus{
-    color: var(--accent-color);
-    }
+.contacts-icons {
+    fill: var(--contacts-color);
+    margin-right: 10px;
+}
+
+.contacts-icons:hover, .contacts-icons:focus {
+    fill: currentColor;
+}
 
 .hero{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-
-    background-image: linear-gradient(47, 48, 58, 0.4) url(../images/img-hero.jpg);
+    margin: 0 auto;
+    max-width: 1600рх;
+    background-image: url(../images/img-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--second-bg-color);
@@ -309,7 +316,7 @@ color: var(--accent-color);
     justify-content: center;
 }
 
-.social-icons-item + .social-icons-item {
+.social-icons-item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -349,7 +356,7 @@ fill: currentColor;
 
 }
 
-.clients-item + .clients-item {
+.clients-item:not(:last-child) {
     margin-right: 30px;
 }
 
