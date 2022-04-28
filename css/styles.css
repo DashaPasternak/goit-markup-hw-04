@@ -131,9 +131,12 @@ color: var(--accent-color);
     margin-left: auto;
 }
 
+.contacts-item {
+    margin-right: 30px;
+}
+
 .header-contacts {
     display: block;
-    margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
@@ -144,19 +147,16 @@ color: var(--accent-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--contacts-color);
+    fill: var(--contacts-color);
 }
 
 .header-contacts:hover, .header-contacts:focus{
     color: var(--accent-color);
+    fill: currentColor;
 }
 
 .contacts-icons {
-    fill: var(--contacts-color);
     margin-right: 10px;
-}
-
-.contacts-icons:hover, .contacts-icons:focus {
-    fill: currentColor;
 }
 
 .hero{
@@ -309,7 +309,7 @@ color: var(--accent-color);
     margin-bottom: 16px;
 
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.17;
     text-align: center;
     color: var(--text-color);
 }
@@ -441,6 +441,7 @@ margin-left: 70px;
     font-size: 14px;
     line-height: 1.14;
     color: var(--main-title-color);
+    text-transform: uppercase;
 }
 
 .social-icons-list {
@@ -522,6 +523,10 @@ margin-left: 70px;
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+}
+
+.portfolio-item-link {
+    display: block;
 }
 
 .portfolio-item-link:hover {
